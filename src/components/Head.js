@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { toggleMenu } from '../utils/appSlice'
 import { YOUTUBE_SEARCH_API } from '../utils/constants';
 import { cacheResults } from '../utils/searchSlice';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
 
@@ -54,10 +55,12 @@ const Header = () => {
                     className="h-9 cursor-pointer"
                     alt="hamburger"
                     src="https://cdn.iconscout.com/icon/free/png-256/free-hamburger-menu-icon-download-in-svg-png-gif-file-formats--crispy-user-interface-pack-icons-462145.png?f=webp&w=256" />
-                <img
-                    className="h-9"
-                    alt="logo"
-                    src="https://1000logos.net/wp-content/uploads/2017/05/Youtube-Logo.png" />
+                <Link to="/">
+                    <img
+                        className="h-9"
+                        alt="logo"
+                        src="https://1000logos.net/wp-content/uploads/2017/05/Youtube-Logo.png" />
+                </Link>
             </div>
             <div className="flex align-middle">
                 <div>
