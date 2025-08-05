@@ -9,16 +9,16 @@ const VideoCard = ({ info }) => {
     const { viewCount } = statistics;
 
     return (
-        <div className="flex flex-wrap gap-4">
-            <div className="p-2 m-2 w-72">
-                <div className="w-full h-36 overflow-hidden rounded-xl">
+        <div className="flex flex-wrap gap-2">
+            <div className="p-2 w-72">
+                <div className="w-full h-36 overflow-hidden rounded-lg">
                     <img
                         src={thumbnails?.high?.url}
                         alt={title}
                         className="w-full h-full object-cover"
                     />
                 </div>
-                <h5>{title}</h5>
+                <h5 className='mt-3'>{title}</h5>
                 <p>{channelTitle}</p>
                 <div className="flex justify-between text-sm text-gray-600">
                     <span>{viewCount} views</span>
